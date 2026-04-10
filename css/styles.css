@@ -549,6 +549,8 @@ ol {
 }
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 24px;
   right: 24px;
   width: 24px;
@@ -556,8 +558,7 @@ ol {
   cursor: pointer;
   border-radius: 100%;
   background-color: #e7e9fc;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -588,6 +589,7 @@ ol {
 .input-container {
   position: relative;
   width: 100%;
+  
 }
 
 .input-container:focus-within .form-icon {
@@ -595,7 +597,7 @@ ol {
 }
 .input-container:focus-within .modal-input,
 .modal-textarea:focus {
-  border-color: #404bbf;
+  border-color: #4d5ae5;
   outline: none;
 }
 .form-icon {
@@ -614,7 +616,7 @@ ol {
   gap: 4px;
   margin-bottom: 8px;
 }
-.modal-field.modal-textarea- {
+.modal-field.modal-textarea-field {
   margin-bottom: 0;
 }
 .modal-label {
@@ -629,6 +631,7 @@ ol {
   border-radius: 4px;
   width: 100%;
   padding: 8px 16px 8px 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
   height: 120px;
@@ -641,6 +644,7 @@ ol {
   border: none;
   fill: #f4f4fd;
 }
+
 
 .modal-checkbox-field {
   margin-bottom: 24px;
@@ -656,17 +660,16 @@ ol {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-icon {
-  fill: #fcfcfc;
-}
+
 .modal-button {
   display: block;
   border-radius: 4px;
   padding: 16px 65px;
   max-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
